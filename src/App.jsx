@@ -9,10 +9,12 @@ import Contact from './pages/contact/Contact'
 import Product from './pages/product/Product'
 import Footer from './components/Footer'
 import SearchBox from './components/SearchBox'
+import ShopContextProvider from './context/shopContext'
 
 const App = () => {
   return (
-    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+   <ShopContextProvider>
+     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
       <BrowserRouter 
       future={{
         v7_startTransition: true,
@@ -30,6 +32,7 @@ const App = () => {
       <Footer />
       </BrowserRouter>
     </div>
+   </ShopContextProvider>
   )
 }
 
