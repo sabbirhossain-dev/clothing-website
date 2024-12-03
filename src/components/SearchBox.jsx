@@ -1,13 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { RxCross1 } from "react-icons/rx";
 import { assets } from '../assets/assets'
-import { ShopContext } from '../context/shopContext'
+import { shopContext } from '../context/shopContext'
 import { useLocation } from 'react-router-dom';
 
 
 const SearchBox = () => {
 
-    const {search , setSearch, showSearch, setShowSearch} = useContext(ShopContext)
+    const {search , setSearch, showSearch, setShowSearch} = useContext(shopContext)
     const [show, setShow] = useState(false)
 
     const location = useLocation()

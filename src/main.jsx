@@ -4,7 +4,6 @@ import './index.css'
 import App from './App.jsx'
 import ShopContextProvider from './context/shopContext.jsx'
 
-
 createRoot(document.getElementById('root')).render(
     <ShopContextProvider>
         <App />

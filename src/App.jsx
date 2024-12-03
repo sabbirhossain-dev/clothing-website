@@ -12,6 +12,7 @@ import SearchBox from './components/SearchBox'
 import LogIn from './pages/users/LogIn'
 import NewUser from './pages/users/NewUser'
 
+
 const App = () => {
   return (
    <>
