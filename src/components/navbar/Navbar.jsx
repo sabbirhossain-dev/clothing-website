@@ -11,7 +11,7 @@ const Navbar = () => {
     const {setShowSearch} = useContext(ShopContext)
     const [toggleMenu, setToggleMenu] = useState(false)
   return (
-    <div className='flex justify-between items-center py-5 font-medium  bg-white z-20 border-b'>
+    <div className='flex justify-between items-center py-5 font-medium w-full h-20  bg-white sticky z-50 border-b'>
         <div>
         <Link to='/'><img src={assets.logo} alt='logo' className='w-36'/></Link>
         </div>
@@ -44,11 +44,13 @@ const Navbar = () => {
         <img onClick={()=>{setShowSearch(true)}} src={assets.search_icon} alt='search-icon' className='w-5 cursor-pointer'/>
         </Link>
         <div className='group relative'>
+                
                 <img src={assets.profile_icon} className='w-5 cursor-pointer'/>
-            <div className='group-hover:block hidden dropdown-menu absolute top-2 -right-16 w-52 text-center p-5'>
-            <div className='flex flex-col gap-4 text-gray-500 bg-white px-6 py-4'>
-                <p className='cursor-pointer hover:text-black transition duration-150'>My Profile</p>
-                <p className='cursor-pointer hover:text-black transition duration-150'>LogIn</p>
+                
+            <div className='group-hover:block hidden dropdown-menu absolute top-1 -right-16 w-40 text-center p-5'>
+            <div className='flex flex-col gap-4 text-gray-500 bg-white pl-4 pr-3 py-3'>
+                
+                <Link to='/login'><p className='cursor-pointer hover:text-black transition duration-150'>LogIn</p></Link>
                 <p className='cursor-pointer hover:text-black transition duration-150'>LogOut</p>
             </div>
             </div>

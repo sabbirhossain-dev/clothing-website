@@ -9,11 +9,15 @@ import Contact from './pages/contact/Contact'
 import Product from './pages/product/Product'
 import Footer from './components/Footer'
 import SearchBox from './components/SearchBox'
+// import ShopContextProvider from './context/shopContext'
+import LogIn from './pages/users/LogIn'
+import NewUser from './pages/users/NewUser'
 import ShopContextProvider from './context/shopContext'
 
 const App = () => {
   return (
-   <ShopContextProvider>
+   <>
+     <ShopContextProvider >
      <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
       <BrowserRouter 
       future={{
@@ -28,11 +32,14 @@ const App = () => {
         <Route path='/products/:productId' element= {<Product />}/>
         <Route path='/about' element= {<About />}/>
         <Route path='/contact' element= {<Contact />}/>
+        <Route path='/login' element={<LogIn />} />
+        <Route path='/newuser' element={<NewUser />} />
       </Routes>
       <Footer />
       </BrowserRouter>
     </div>
-   </ShopContextProvider>
+     </ShopContextProvider>
+   </>
   )
 }
 
