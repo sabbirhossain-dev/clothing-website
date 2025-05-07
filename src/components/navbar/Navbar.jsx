@@ -3,7 +3,7 @@ import {assets} from '../../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
 import { RxCross1 } from "react-icons/rx";
 import { FaBars } from 'react-icons/fa';
-import { ShopContext } from '../../context/shopContext';
+import { ShopContext } from '../../context/ShopContext';
 import Collection from '../../pages/collection/Collection';
 
 

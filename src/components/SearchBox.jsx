@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { RxCross1 } from "react-icons/rx";
 import { assets } from '../assets/assets'
-import { ShopContext } from '../context/shopContext'
+import { ShopContext } from '../context/ShopContext'
 import { useLocation } from 'react-router-dom';
 
 
