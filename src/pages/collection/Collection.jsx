@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { assets } from '../../assets/assets'
 import Title from '../../components/Title'
 import ProductItem from '../../components/ProductItem'
-import { shopContext } from '../../context/shopContext'
+import { ShopContext } from '../../context/shopContext'
 
 const Collection = () => {
 
@@ -12,7 +12,7 @@ const Collection = () => {
   const [subCategory, setSubCategory] = useState([])
   const [sortTypes, setSortTypes] = useState("relavent")
 
-  const {products,search,showSearch} = useContext(shopContext)
+  const {products,search,showSearch} = useContext(ShopContext)
 
 
   // toggle category

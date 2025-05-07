@@ -3,12 +3,12 @@ import {assets} from '../../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
 import { RxCross1 } from "react-icons/rx";
 import { FaBars } from 'react-icons/fa';
-import { shopContext } from '../../context/shopContext';
+import { ShopContext } from '../../context/shopContext';
 import Collection from '../../pages/collection/Collection';
 
 
 const Navbar = () => {
-    const {setShowSearch} = useContext(shopContext)
+    const {setShowSearch} = useContext(ShopContext)
     const [toggleMenu, setToggleMenu] = useState(false)
   return (
     <div className='flex justify-between items-center py-5 font-medium w-full h-20  bg-white sticky z-50 border-b'>
