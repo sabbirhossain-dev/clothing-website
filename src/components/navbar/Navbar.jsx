@@ -43,15 +43,16 @@ const Navbar = () => {
         <Link to='/collection'>
         <img onClick={()=>{setShowSearch(true)}} src={assets.search_icon} alt='search-icon' className='w-5 cursor-pointer'/>
         </Link>
-        <div className='group relative'>
+
+        <div className='group relative cursor-pointer'>
                 
                 <img src={assets.profile_icon} className='w-5 cursor-pointer'/>
                 
             <div className='group-hover:block hidden dropdown-menu absolute top-1 -right-16 w-40 text-center p-5'>
-            <div className='flex flex-col gap-4 text-gray-500 bg-white pl-4 pr-3 py-3'>
+            <div className='flex flex-col gap-4 text-gray-300 bg-gray-800 p-4 mt-1 rounded-sm'>
                 
-                <Link to='/login'><p className='cursor-pointer hover:text-black transition duration-150'>LogIn</p></Link>
-                <p className='cursor-pointer hover:text-black transition duration-150'>LogOut</p>
+                <Link to='/login'><p className='cursor-pointer hover:text-white transition duration-150'>LogIn</p></Link>
+                <p className='cursor-pointer hover:text-white transition duration-150'>LogOut</p>
             </div>
             </div>
         </div>
