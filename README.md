@@ -93,19 +93,27 @@ git clone https://github.com/sabbirhossain-dev/clothing-website.git
 ```
 
 ### 2. Navigate to the Project Directory
-cd clothing-website
-
+```bash
+ cd clothing-website
+```  
 ### 3. Install Dependencies
+```bash
 npm install
-
+```
 ### 4. Start the Development Server
+```bash
 npm run dev
+```
 
 ### Usually, the application will be available at:
+```bash
 http://localhost:5173
+```
 
 ### Build for Production
+```bash
 npm run build
+```
 
 
 
