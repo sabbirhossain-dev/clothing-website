@@ -1,4 +1,4 @@
-# 👗 Clothing Website
+# Clothing Website
 
 A modern and responsive clothing web application built with React, Vite, and Tailwind CSS, featuring a clean UI, smooth navigation, product-focused layouts, and interactive user feedback.
 
